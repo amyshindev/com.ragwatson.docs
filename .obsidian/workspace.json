@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Backend/BACKEND_RULES.md",
+                "file": "DevOps/Backend/DOMAIN_APPS_ERD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BACKEND_RULES"
+              "title": "DOMAIN_APPS_ERD"
             }
           }
         ]
@@ -185,6 +185,11 @@
   },
   "active": "c1528d37a0ef2a39",
   "lastOpenFiles": [
+    "DevOps/Backend/TITANIC_ERD.md",
+    "DevOps/Backend/DOMAIN_APPS_ERD.md",
+    "DevOps/Backend/SECOM_ERD.md",
+    "DevOps/Backend/BACKEND_RULES.md",
+    "erd.md",
     "AI_장르미학_시각화_플랫폼_웹사이트_구조설계도.md",
     "페이지설명.md",
     "ㅇㅇ.md",
@@ -200,7 +205,6 @@
     "새 폴더",
     "maestro개발",
     "maestro 개발",
-    "maestro 개바",
-    "무제.md"
+    "maestro 개바"
   ]
 }
