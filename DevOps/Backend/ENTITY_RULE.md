@@ -1,4 +1,4 @@
-# 엔티티·테이블 설계 규칙 (Maestro)
+ # 엔티티·테이블 설계 규칙 (Maestro)
 
 이 문서는 **모든 DB 테이블**에 적용되는 기본 키 규칙입니다.  
 DB 접근 계층은 `docs/DevOps/Backend/BACKEND_RULES.md` §3과 함께 참고합니다.
