@@ -1,1 +1,24 @@
-{}
+{
+  "userIgnoreFilters": [
+    "__pycache__",
+    "**/*.py",
+    "alembic",
+    "node_modules",
+    ".next",
+    "out",
+    ".coverage",
+    ".venv",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js ",
+    "**/*.jsx",
+    "**/*.css",
+    "**/*.scss",
+    ".DS_Store",
+    ".env*"
+  ],
+  "showUnsupportedFiles": true
+}
