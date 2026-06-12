@@ -1,3 +1,9 @@
+---
+tags:
+  - harness/docs-task
+graph-group: docs-task
+---
+
 # Maestro — ML DB 4-Layer 구현 작업지시서 (v3)
 
 | 항목 | 내용 |

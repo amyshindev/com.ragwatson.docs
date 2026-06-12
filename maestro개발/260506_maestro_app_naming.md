@@ -1,3 +1,9 @@
+---
+tags:
+  - harness/docs-maestro
+graph-group: docs-maestro
+---
+
 # 🎵 Maestro — Beatles Role Mapping
 
 > **용도**: 개인 개발 에이전트 데이터  

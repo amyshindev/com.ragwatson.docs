@@ -1,3 +1,9 @@
+---
+tags:
+  - harness/docs-wiki
+graph-group: docs-wiki
+---
+
 # 🎵 AI 음악 비주얼 생성 서비스 — 랜딩 페이지 Cursor 프롬프트
 
 아래 프롬프트를 Cursor의 Composer(또는 Chat)에 그대로 붙여넣으세요.
