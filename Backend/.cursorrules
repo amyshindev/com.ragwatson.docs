@@ -1,0 +1,62 @@
+# Cursor Execution Harness (Backend)
+
+**Scope:** [`CLAUDE.md`](CLAUDE.md) · **Vault:** `docs/Backend/` only (Frontend vault와 wikilink 분리).
+
+> Root blueprint: repository `CLAUDE.md` (텍스트 경로 — 링크 없음).
+
+---
+
+## Before `backend/` changes
+
+1. Repository root `CLAUDE.md` — blueprint + agent behavior
+2. [`CLAUDE.md`](CLAUDE.md) — module pathing, `apps/` siblings, hexagonal layers
+3. Same-folder rules: [`db-rules.md`](db-rules.md) · [`entity-rules.md`](entity-rules.md) · [`app-rules.md`](app-rules.md)
+4. Domain app: code tree `backend/apps/{app}/_docs/CLAUDE.md`
+
+---
+
+## Quick rules
+
+| Item | Rule |
+|------|------|
+| `PYTHONPATH` | `apps` — import `titanic.*`, `core.*` (not `backend.apps.*`) |
+| Entry | `main.py` — routers + middleware only |
+| Run | `start-backend.ps1` → port **8000** |
+| Layers | router → `dependencies/*_provider` → interactor → repository |
+| `Depends` | Only in providers and routers — **not** inside interactors |
+| Secrets | Never commit `backend/.env` |
+
+---
+
+## ML 데이터 척도 (요약)
+
+[`CLAUDE.md`](CLAUDE.md) §8 참고. 피처 전처리 전 반드시 분류:
+
+| 구분 | 척도 | 핵심 |
+|------|------|------|
+| Categorical | **nominal** | 순서 없음 — 청팀/홍팀/백팀 |
+| Categorical | **ordinal** | 순서 있음 — 1.매우낮음 ~ 5.매우높음 |
+| Quantitative | **interval** | 원점 없음, 등간격 — 온도, pH, 시간 구간 |
+| Quantitative | **ratio** | 원점(0) 있음, 배율 가능 — 나이, 돈, 몸무게 |
+
+---
+
+## Sibling apps
+
+Each peer under `apps/` (`titanic`, `audio`, `user`, …) owns hexagonal tree + optional `_docs/CLAUDE.md`.
+
+---
+
+## Agent behavior (summary)
+
+Think · simplify · surgical · goal-driven (root `CLAUDE.md` § Agent Behavioral Guidelines).
+
+---
+
+## Self-check
+
+- [ ] Correct app `_docs/` doc read?
+- [ ] Logic in the right layer?
+- [ ] DB writes have commit/rollback?
+- [ ] No secrets in diff?
+- [ ] ML 피처 척도(nominal/ordinal/interval/ratio) 분류했는가?

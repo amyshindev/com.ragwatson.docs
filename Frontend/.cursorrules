@@ -1,0 +1,42 @@
+# Cursor Execution Harness (Frontend)
+
+**Scope:** [`CLAUDE.md`](CLAUDE.md) · **Vault:** `docs/Frontend/` only (Backend vault와 wikilink 분리).
+
+> [`REACT_RULES.md`](REACT_RULES.md) is mandatory for UI work.
+
+---
+
+## Before `frontend/` changes
+
+1. Repository root `CLAUDE.md` — blueprint + agent behavior
+2. [`CLAUDE.md`](CLAUDE.md) — layout, API integration
+3. [`REACT_RULES.md`](REACT_RULES.md) — React patterns (full rules)
+
+API 도메인 계약: code tree `backend/apps/{app}/_docs/CLAUDE.md` (vault wikilink 없음).
+
+---
+
+## Quick rules
+
+| Item | Rule |
+|------|------|
+| Routes | `app/**/page.tsx` |
+| API helpers | `lib/*-api.ts` |
+| State | One object per related UI state — avoid field-per-`useState` |
+| Forms | `FormData`; capture `form = e.currentTarget` before `await` |
+| Errors | Inline UI — no `alert()` |
+| Backend HTTP | `http://127.0.0.1:8000`; Titanic `/titanic/*` |
+
+---
+
+## Agent behavior (summary)
+
+Think · simplify · surgical · goal-driven (root `CLAUDE.md` § Agent Behavioral Guidelines).
+
+---
+
+## Self-check
+
+- [ ] `REACT_RULES.md` patterns followed?
+- [ ] API paths match backend routers?
+- [ ] Request-scoped diff only?
